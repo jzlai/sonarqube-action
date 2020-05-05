@@ -3,7 +3,7 @@
 set -e
 
 if [[ -z "${INPUT_PASSWORD}" ]]; then
-	SONAR_PASSWORD="&& true"
+	SONAR_PASSWORD=""
 else
 	SONAR_PASSWORD="${INPUT_PASSWORD}"
 fi
@@ -15,6 +15,5 @@ sonar-scanner \
 	-Dsonar.login=${INPUT_LOGIN} \
 	-Dsonar.password=${INPUT_PASSWORD} \
 	-Dsonar.sources=. \
-	-Dsonar.sourceEncoding=UTF-8 \
-	${SONAR_PASSWORD}
+	-Dsonar.sourceEncoding=UTF-8
 
