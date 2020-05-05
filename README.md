@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: SonarQube Scan
-      uses: kitabisa/sonarqube-action@master
+      uses: jzlai/sonarqube-action@master
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
@@ -33,7 +33,7 @@ jobs:
 You can change the analysis base directory by using the optional input `projectBaseDir` like this:
 
 ```yaml
-uses: kitabisa/sonarqube-action@master
+uses: jzlai/sonarqube-action@master
 with:
   projectBaseDir: my-custom-directory
 ```
