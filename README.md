@@ -42,7 +42,9 @@ with:
 
 - `host` - **_(Required)_** this is the SonarQube server URL.
 - `login` - **_(Required)_** the login or authentication token of a SonarQube user with Execute Analysis permission on the project. See [how to generate SonarQube token](https://docs.sonarqube.org/latest/user-guide/user-token/).
+- `projectKey` - **_(Required)_** the key under which the project will appear in SonarQube
 - `password` - The password that goes with the `login` username. This should be left blank if an `login` are authentication token.
+
 
 You can set all variable in the "Secrets" settings page of your repository.
 
